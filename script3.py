@@ -3,6 +3,7 @@ DFA que Reconoce operaciones aritmetivas
 Implementacion de metodos computacionales
 """
 
+# tabla de transiciones
 transiciones = {
     "start": {
         "//": "comentario", "=": "igualdad", ".": "error",
@@ -23,7 +24,7 @@ transiciones = {
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
 
         "+": "suma", "-": "resta", "*": "multiplicacion", "/": "division", "^": "poder",
-        "(": "parentesisA", ")": "parentesisC", " ": "espacio"
+        "(": "parentesisA", ")": "parentesisC", " ": "start"
     },
     "numero": {
         "//": "comentario", "=": "igualdad", ".": "float",
@@ -44,7 +45,7 @@ transiciones = {
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
 
         "+": "suma", "-": "resta", "*": "multiplicacion", "/": "division", "^": "poder",
-        "(": "parentesisA", ")": "parentesisC", " ": "espacio"
+        "(": "parentesisA", ")": "parentesisC", " ": "numero"
     },
     "numExp": {
         "//": "comentario", "=": "igualdad", ".": "float",
@@ -65,7 +66,7 @@ transiciones = {
         "5": "numExp", "6": "numExp", "7": "numExp", "8": "numExp", "9": "numExp",
 
         "+": "error", "-": "numExp", "*": "error", "/": "erroe", "^": "error",
-        "(": "error", ")": "error", " ": "espacio"
+        "(": "error", ")": "error", " ": "numExp"
 
     },
     "floatExp": {
@@ -87,7 +88,7 @@ transiciones = {
         "5": "floatExp", "6": "floatExp", "7": "floatExp", "8": "floatExp", "9": "floatExp",
 
         "+": "error", "-": "floatExp", "*": "error", "/": "erroe", "^": "error",
-        "(": "error", ")": "error", " ": "espacio"
+        "(": "error", ")": "error", " ": "floatExp"
 
     },
     "variable": {
@@ -109,7 +110,7 @@ transiciones = {
         "5": "variable", "6": "variable", "7": "variable", "8": "variable", "9": "variable",
 
         "+": "suma", "-": "resta", "*": "multiplicacion", "/": "division", "^": "poder",
-        "(": "parentesisA", ")": "parentesisC", " ": "espacio"
+        "(": "parentesisA", ")": "parentesisC", " ": "variable"
     },
     "suma": {
         "//": "comentario", "=": "error", ".": "error",
@@ -130,7 +131,7 @@ transiciones = {
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
 
         "+": "error", "-": "error", "*": "error", "/": "error", "^": "error",
-        "(": "parentesisA", ")": "parentesisC", " ": "espacio"
+        "(": "parentesisA", ")": "parentesisC", " ": "suma"
     },
 
     "poder": {
@@ -152,7 +153,7 @@ transiciones = {
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
 
         "+": "error", "-": "error", "*": "error", "/": "error", "^": "error",
-        "(": "parentesisA", ")": "parentesisC", " ": "espacio"
+        "(": "parentesisA", ")": "parentesisC", " ": "poder"
     },
     "resta": {
         "//": "comentario", "=": "error", ".": "error",
@@ -173,7 +174,7 @@ transiciones = {
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
 
         "+": "error", "-": "error", "*": "error", "/": "error", "^": "error",
-        "(": "parentesisA", ")": "parentesisC", " ": "espacio"
+        "(": "parentesisA", ")": "parentesisC", " ": "resta"
     },
     "multiplicacion": {
         "//": "comentario", "=": "error", ".": "error",
@@ -194,7 +195,7 @@ transiciones = {
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
 
         "+": "error", "-": "error", "*": "error", "/": "error", "^": "error",
-        "(": "parentesisA", ")": "parentesisC", " ": "espacio"
+        "(": "parentesisA", ")": "parentesisC", " ": "multiplicacion"
     },
     "division": {
         "//": "comentario", "=": "error", ".": "error",
@@ -215,7 +216,7 @@ transiciones = {
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
 
         "+": "error", "-": "error", "*": "error", "/": "comentario", "^": "error",
-        "(": "parentesisA", ")": "parentesisC", " ": "espacio"
+        "(": "parentesisA", ")": "parentesisC", " ": "division"
     },
     "parentesisA": {
         "//": "comentario", "=": "igualdad", ".": "error",
@@ -235,8 +236,8 @@ transiciones = {
         "0": "numero", "1": "numero", "2": "numero", "3": "numero", "4": "numero",
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
 
-        "+": "suma", "-": "resta", "*": "multiplicacion", "/": "division", "^": "poder",
-        "(": "parentesisA", ")": "parentesisC", " ": "espacio"
+        "+": "suma", "-": "negativo", "*": "multiplicacion", "/": "division", "^": "poder",
+        "(": "parentesisA", ")": "parentesisC", " ": "parentesisA"
     },
     "parentesisC": {
         "//": "comentario", "=": "igualdad", ".": "error",
@@ -257,7 +258,7 @@ transiciones = {
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
 
         "+": "suma", "-": "resta", "*": "multiplicacion", "/": "division", "^": "poder",
-        "(": "parentesisA", ")": "parentesisC", " ": "espacio"
+        "(": "parentesisA", ")": "parentesisC", " ": "parentesisC"
     },
     "igualdad": {
         "//": "comentario", "=": "error", ".": "error",
@@ -278,7 +279,7 @@ transiciones = {
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
 
         "+": "error", "-": "error", "*": "error", "/": "error", "^": "error",
-        "(": "parentesisA", ")": "parentesisC", " ": "espacio"
+        "(": "parentesisA", ")": "parentesisC", " ": "igualdad"
     },
     "float": {
         "//": "error", "=": "error", ".": "error",
@@ -299,7 +300,7 @@ transiciones = {
         "5": "float", "6": "float", "7": "float", "8": "float", "9": "float",
 
         "+": "suma", "-": "resta", "*": "multiplicacion", "/": "division", "^": "poder",
-        "(": "error", ")": "error", " ": "espacio"
+        "(": "error", ")": "error", " ": "float"
     },
     "comentario": {
         "//": "comentario", "=": "comentario", ".": "comentario",
@@ -343,8 +344,9 @@ transiciones = {
         "+": "error", "-": "error", "*": "error", "/": "error", "^": "error",
         "(": "error", ")": "error", " ": "error"
     },
-    "espacio": {
-        "//": "comentario", "=": "igualdad", ".": "error",
+
+    "negativo": {
+        "//": "comentario", "=": "comentario", ".": "comentario",
 
         "A": "variable", "B": "variable", "C": "variable", "D": "variable", "E": "variable",
         "F": "variable", "G": "variable", "H": "variable", "I": "variable", "J": "variable",
@@ -361,33 +363,40 @@ transiciones = {
         "0": "numero", "1": "numero", "2": "numero", "3": "numero", "4": "numero",
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
 
-        "+": "suma", "-": "resta", "*": "multiplicacion", "/": "division", "^": "poder",
-        "(": "parentesisA", ")": "parentesisC", " ": "espacio"
-
-    }
+        "+": "error", "-": "error", "*": "error", "/": "error", "^": "error",
+        "(": "parentesisA", ")": "parentesisC", " ": "negativo"
+    },
 }
 
 
 def lexerAritmetico(nombre_archivo):
+    # lectura del archivo
     texto = open(nombre_archivo, "r")
     texto = texto.readlines()
+    # for loop por cada linea del archivo
     for i in range(0, len(texto)):
+        # el estado se reinicia al estado inicial
         estado = "start"
+        # se quita el simbolo \n que se agrega al leer el archivo
         texto[i] = texto[i].replace("\n", "")
+        # la palabra se reinicia
         palabra = ""
         for j in range(0, len(texto[i])):
+            # se saca el elemento con el que se van a hacer las condiciones
             elemento = texto[i][j]
+            # se saca el estado con el que se van a hacer las condiciones
             nuevo_estado = transiciones[estado][elemento]
-            if nuevo_estado == estado or (estado == "numero" and nuevo_estado == "float") or (estado == "float" and nuevo_estado == "floatExp") or (estado == "division" and nuevo_estado == "comentario"):
+
+            # si es que el estado es el mismo (o si son estados en los cuales la palabra no se borra (numero a float , division a comentario , float a floatExp , numero a numeroExp , o cualquiera que tenga negativo) ),
+            # se le agrega el elemento actual a la palabra y se cambia el estado al estado actual
+            if nuevo_estado == estado or (estado == "numero" and nuevo_estado == "float") or (estado == "float" and nuevo_estado == "floatExp") or (estado == "division" and nuevo_estado == "comentario") or (estado == "negativo"):
                 palabra += elemento
                 estado = nuevo_estado
-            elif nuevo_estado == "espacio":
-                palabra += elemento
             else:
-                print(palabra, estado)
+                print(palabra, "||", estado)
                 estado = nuevo_estado
                 palabra = elemento
-        print(palabra, estado)
+        print(palabra, "||", estado)
 
 
 lexerAritmetico("texto.txt")
