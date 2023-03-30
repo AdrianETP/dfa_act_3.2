@@ -6,7 +6,7 @@ Implementacion de metodos computacionales
 # tabla de transiciones
 transiciones = {
     "start": {
-        "//": "comentario", "=": "igualdad", ".": "error",
+        "//": "comentario", "=": "igualdad", ".": "float",
 
         "A": "variable", "B": "variable", "C": "variable", "D": "variable", "E": "variable",
         "F": "variable", "G": "variable", "H": "variable", "I": "variable", "J": "variable",
@@ -92,7 +92,7 @@ transiciones = {
 
     },
     "variable": {
-        "//": "comentario", "=": "igualdad", ".": "error",
+        "//": "comentario", "=": "igualdad", ".": "float",
 
         "A": "variable", "B": "variable", "C": "variable", "D": "variable", "E": "variable",
         "F": "variable", "G": "variable", "H": "variable", "I": "variable", "J": "variable",
@@ -113,7 +113,7 @@ transiciones = {
         "(": "parentesisA", ")": "parentesisC", " ": "variable"
     },
     "suma": {
-        "//": "comentario", "=": "error", ".": "error",
+        "//": "comentario", "=": "error", ".": "float",
 
         "A": "variable", "B": "variable", "C": "variable", "D": "variable", "E": "variable",
         "F": "variable", "G": "variable", "H": "variable", "I": "variable", "J": "variable",
@@ -135,7 +135,7 @@ transiciones = {
     },
 
     "poder": {
-        "//": "comentario", "=": "error", ".": "error",
+        "//": "comentario", "=": "error", ".": "float",
 
         "A": "variable", "B": "variable", "C": "variable", "D": "variable", "E": "variable",
         "F": "variable", "G": "variable", "H": "variable", "I": "variable", "J": "variable",
@@ -177,7 +177,7 @@ transiciones = {
         "(": "parentesisA", ")": "parentesisC", " ": "resta"
     },
     "multiplicacion": {
-        "//": "comentario", "=": "error", ".": "error",
+        "//": "comentario", "=": "error", ".": "float",
 
         "A": "variable", "B": "variable", "C": "variable", "D": "variable", "E": "variable",
         "F": "variable", "G": "variable", "H": "variable", "I": "variable", "J": "variable",
@@ -198,7 +198,7 @@ transiciones = {
         "(": "parentesisA", ")": "parentesisC", " ": "multiplicacion"
     },
     "division": {
-        "//": "comentario", "=": "error", ".": "error",
+        "//": "comentario", "=": "error", ".": "float",
 
         "A": "variable", "B": "variable", "C": "variable", "D": "variable", "E": "variable",
         "F": "variable", "G": "variable", "H": "variable", "I": "variable", "J": "variable",
@@ -219,7 +219,7 @@ transiciones = {
         "(": "parentesisA", ")": "parentesisC", " ": "division"
     },
     "parentesisA": {
-        "//": "comentario", "=": "igualdad", ".": "error",
+        "//": "comentario", "=": "igualdad", ".": "float",
 
         "A": "variable", "B": "variable", "C": "variable", "D": "variable", "E": "variable",
         "F": "variable", "G": "variable", "H": "variable", "I": "variable", "J": "variable",
@@ -240,7 +240,7 @@ transiciones = {
         "(": "parentesisA", ")": "parentesisC", " ": "parentesisA"
     },
     "parentesisC": {
-        "//": "comentario", "=": "igualdad", ".": "error",
+        "//": "comentario", "=": "igualdad", ".": "float",
 
         "A": "variable", "B": "variable", "C": "variable", "D": "variable", "E": "variable",
         "F": "variable", "G": "variable", "H": "variable", "I": "variable", "J": "variable",
@@ -261,7 +261,7 @@ transiciones = {
         "(": "parentesisA", ")": "parentesisC", " ": "parentesisC"
     },
     "igualdad": {
-        "//": "comentario", "=": "error", ".": "error",
+        "//": "comentario", "=": "error", ".": "float",
 
         "A": "variable", "B": "variable", "C": "variable", "D": "variable", "E": "variable",
         "F": "variable", "G": "variable", "H": "variable", "I": "variable", "J": "variable",
@@ -346,7 +346,7 @@ transiciones = {
     },
 
     "negativo": {
-        "//": "comentario", "=": "comentario", ".": "comentario",
+        "//": "comentario", "=": "error", ".": "float",
 
         "A": "variable", "B": "variable", "C": "variable", "D": "variable", "E": "variable",
         "F": "variable", "G": "variable", "H": "variable", "I": "variable", "J": "variable",
