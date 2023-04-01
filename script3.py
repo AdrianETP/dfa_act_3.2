@@ -18,7 +18,7 @@ transiciones = {
         "j": "variable", "k": "variable", "l": "variable", "m": "variable", "n": "variable",
         "o": "variable", "p": "variable", "q": "variable", "r": "variable", "s": "variable",
         "t": "variable", "u": "variable", "v": "variable", "w": "variable", "x": "variable",
-        "y": "variable", "z": "variable",
+        "y": "variable", "z": "variable", "_": "variable",
 
         "0": "numero", "1": "numero", "2": "numero", "3": "numero", "4": "numero",
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
@@ -39,7 +39,7 @@ transiciones = {
         "j": "variable", "k": "variable", "l": "variable", "m": "variable", "n": "variable",
         "o": "variable", "p": "variable", "q": "variable", "r": "variable", "s": "variable",
         "t": "variable", "u": "variable", "v": "variable", "w": "variable", "x": "variable",
-        "y": "variable", "z": "variable",
+        "y": "variable", "z": "variable", "_": "variable",
 
         "0": "numero", "1": "numero", "2": "numero", "3": "numero", "4": "numero",
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
@@ -60,7 +60,7 @@ transiciones = {
         "j": "error", "k": "error", "l": "error", "m": "error", "n": "error",
         "o": "error", "p": "error", "q": "error", "r": "error", "s": "error",
         "t": "error", "u": "error", "v": "error", "w": "error", "x": "error",
-        "y": "error", "z": "error",
+        "y": "error", "z": "error", "_": "error",
 
         "0": "numExp", "1": "numExp", "2": "numExp", "3": "numExp", "4": "numExp",
         "5": "numExp", "6": "numExp", "7": "numExp", "8": "numExp", "9": "numExp",
@@ -82,7 +82,7 @@ transiciones = {
         "j": "error", "k": "error", "l": "error", "m": "error", "n": "error",
         "o": "error", "p": "error", "q": "error", "r": "error", "s": "error",
         "t": "error", "u": "error", "v": "error", "w": "error", "x": "error",
-        "y": "error", "z": "error",
+        "y": "error", "z": "error", "_": "error",
 
         "0": "floatExp", "1": "floatExp", "2": "floatExp", "3": "floatExp", "4": "floatExp",
         "5": "floatExp", "6": "floatExp", "7": "floatExp", "8": "floatExp", "9": "floatExp",
@@ -104,7 +104,7 @@ transiciones = {
         "j": "variable", "k": "variable", "l": "variable", "m": "variable", "n": "variable",
         "o": "variable", "p": "variable", "q": "variable", "r": "variable", "s": "variable",
         "t": "variable", "u": "variable", "v": "variable", "w": "variable", "x": "variable",
-        "y": "variable", "z": "variable",
+        "y": "variable", "z": "variable", "_": "variable",
 
         "0": "variable", "1": "variable", "2": "variable", "3": "variable", "4": "variable",
         "5": "variable", "6": "variable", "7": "variable", "8": "variable", "9": "variable",
@@ -125,7 +125,7 @@ transiciones = {
         "j": "variable", "k": "variable", "l": "variable", "m": "variable", "n": "variable",
         "o": "variable", "p": "variable", "q": "variable", "r": "variable", "s": "variable",
         "t": "variable", "u": "variable", "v": "variable", "w": "variable", "x": "variable",
-        "y": "variable", "z": "variable",
+        "y": "variable", "z": "variable", "_": "variable",
 
         "0": "numero", "1": "numero", "2": "numero", "3": "numero", "4": "numero",
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
@@ -147,7 +147,7 @@ transiciones = {
         "j": "variable", "k": "variable", "l": "variable", "m": "variable", "n": "variable",
         "o": "variable", "p": "variable", "q": "variable", "r": "variable", "s": "variable",
         "t": "variable", "u": "variable", "v": "variable", "w": "variable", "x": "variable",
-        "y": "variable", "z": "variable",
+        "y": "variable", "z": "variable", "_": "variable",
 
         "0": "numero", "1": "numero", "2": "numero", "3": "numero", "4": "numero",
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
@@ -168,7 +168,7 @@ transiciones = {
         "j": "variable", "k": "variable", "l": "variable", "m": "variable", "n": "variable",
         "o": "variable", "p": "variable", "q": "variable", "r": "variable", "s": "variable",
         "t": "variable", "u": "variable", "v": "variable", "w": "variable", "x": "variable",
-        "y": "variable", "z": "variable",
+        "y": "variable", "z": "variable", "_": "variable",
 
         "0": "numero", "1": "numero", "2": "numero", "3": "numero", "4": "numero",
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
@@ -189,7 +189,7 @@ transiciones = {
         "j": "variable", "k": "variable", "l": "variable", "m": "variable", "n": "variable",
         "o": "variable", "p": "variable", "q": "variable", "r": "variable", "s": "variable",
         "t": "variable", "u": "variable", "v": "variable", "w": "variable", "x": "variable",
-        "y": "variable", "z": "variable",
+        "y": "variable", "z": "variable", "_": "variable",
 
         "0": "numero", "1": "numero", "2": "numero", "3": "numero", "4": "numero",
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
@@ -210,7 +210,7 @@ transiciones = {
         "j": "variable", "k": "variable", "l": "variable", "m": "variable", "n": "variable",
         "o": "variable", "p": "variable", "q": "variable", "r": "variable", "s": "variable",
         "t": "variable", "u": "variable", "v": "variable", "w": "variable", "x": "variable",
-        "y": "variable", "z": "variable",
+        "y": "variable", "z": "variable", "_": "variable",
 
         "0": "numero", "1": "numero", "2": "numero", "3": "numero", "4": "numero",
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
@@ -231,7 +231,7 @@ transiciones = {
         "j": "variable", "k": "variable", "l": "variable", "m": "variable", "n": "variable",
         "o": "variable", "p": "variable", "q": "variable", "r": "variable", "s": "variable",
         "t": "variable", "u": "variable", "v": "variable", "w": "variable", "x": "variable",
-        "y": "variable", "z": "variable",
+        "y": "variable", "z": "variable", "_": "variable",
 
         "0": "numero", "1": "numero", "2": "numero", "3": "numero", "4": "numero",
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
@@ -252,7 +252,7 @@ transiciones = {
         "j": "variable", "k": "variable", "l": "variable", "m": "variable", "n": "variable",
         "o": "variable", "p": "variable", "q": "variable", "r": "variable", "s": "variable",
         "t": "variable", "u": "variable", "v": "variable", "w": "variable", "x": "variable",
-        "y": "variable", "z": "variable",
+        "y": "variable", "z": "variable", "_": "variable",
 
         "0": "numero", "1": "numero", "2": "numero", "3": "numero", "4": "numero",
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
@@ -273,7 +273,7 @@ transiciones = {
         "j": "variable", "k": "variable", "l": "variable", "m": "variable", "n": "variable",
         "o": "variable", "p": "variable", "q": "variable", "r": "variable", "s": "variable",
         "t": "variable", "u": "variable", "v": "variable", "w": "variable", "x": "variable",
-        "y": "variable", "z": "variable",
+        "y": "variable", "z": "variable", "_": "variable",
 
         "0": "numero", "1": "numero", "2": "numero", "3": "numero", "4": "numero",
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
@@ -294,7 +294,7 @@ transiciones = {
         "j": "error", "k": "error", "l": "error", "m": "error", "n": "error",
         "o": "error", "p": "error", "q": "error", "r": "error", "s": "error",
         "t": "error", "u": "error", "v": "error", "w": "error", "x": "error",
-        "y": "error", "z": "error",
+        "y": "error", "z": "error", "_": "error",
 
         "0": "float", "1": "float", "2": "float", "3": "float", "4": "float",
         "5": "float", "6": "float", "7": "float", "8": "float", "9": "float",
@@ -315,7 +315,7 @@ transiciones = {
         "j": "comentario", "k": "comentario", "l": "comentario", "m": "comentario", "n": "comentario",
         "o": "comentario", "p": "comentario", "q": "comentario", "r": "comentario", "s": "comentario",
         "t": "comentario", "u": "comentario", "v": "comentario", "w": "comentario", "x": "comentario",
-        "y": "comentario", "z": "comentario",
+        "y": "comentario", "z": "comentario", "_": "comentario",
 
         "0": "comentario", "1": "comentario", "2": "comentario", "3": "comentario", "4": "comentario",
         "5": "comentario", "6": "comentario", "7": "comentario", "8": "comentario", "9": "comentario",
@@ -336,7 +336,7 @@ transiciones = {
         "j": "error", "k": "error", "l": "error", "m": "error", "n": "error",
         "o": "error", "p": "error", "q": "error", "r": "error", "s": "error",
         "t": "error", "u": "error", "v": "error", "w": "error", "x": "error",
-        "y": "error", "z": "error",
+        "y": "error", "z": "error", "_": "error",
 
         "0": "error", "1": "error", "2": "error", "3": "error", "4": "error",
         "5": "error", "6": "error", "7": "error", "8": "error", "9": "error",
@@ -358,7 +358,7 @@ transiciones = {
         "j": "variable", "k": "variable", "l": "variable", "m": "variable", "n": "variable",
         "o": "variable", "p": "variable", "q": "variable", "r": "variable", "s": "variable",
         "t": "variable", "u": "variable", "v": "variable", "w": "variable", "x": "variable",
-        "y": "variable", "z": "variable",
+        "y": "variable", "z": "variable", "_": "variable",
 
         "0": "numero", "1": "numero", "2": "numero", "3": "numero", "4": "numero",
         "5": "numero", "6": "numero", "7": "numero", "8": "numero", "9": "numero",
